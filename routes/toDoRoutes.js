@@ -23,6 +23,8 @@ function ToDo(title, body){
 }
 todos.push(new ToDo('Math','You need to work on math.'), new ToDo('Angular','You need to work on angular too'),new ToDo('Angular-Material','You need to learn more about angular material also'));
 
+
+// MIDDDLEWARE - TYPICAL param and use
 router.param('id', function(req, res, next, id){
   for (var i = 0; i < todos.length; i++) {
     if(id === todos[i].id){
